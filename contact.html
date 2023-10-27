@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Learn about the best way to get in touch with me">
+        <meta name="keywords" content="Adam,Bauer,computer,engineer,travel,UCSD">
+    </head>
+    <body>
+        <header>
+            <h1>Let's Connect.</h1>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Me</a>
+                <a href="./portfolio.html">Portfolio Overview</a>
+                <a href="./experiment.html">Experiment page (uses extra tags for assignment)</a>
+            </nav>
+        </header>
+        <p>Thanks for looking around!</p>
+
+        
+        <main>
+            
+            <form id="my-info">
+                <fieldset>
+                    <legend>Please contact me via one of the methods below</legend>
+                    <a href="mailto:asbauer@ucsd.edu">Email me</a>
+                    <br>
+                    <textarea id="their-info">Leave your info, and I'll contact you.</textarea>
+                    <br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+
+                </fieldset>
+            </form>
+        
+            <form>
+                <fieldset>
+                    <legend>Please fill answer these questions for future site improvements.</legend>
+                    <textarea id="suggestions-box">Please write your suggestions here. </textarea>
+                    <br>
+                    <button type="reset">Clear</button>
+                    <button type="submit">Submit</button>
+                    <br>
+                    <label> Select your reasoning for visiting: </label>
+                    <br>
+                    <input type="radio" id="professional" name="reason">
+                    <label for="professional">Professional</label>
+                    <input type="radio" id="social" name="reason"> 
+                    <!-- name controls which radio to link it to, so that only 1 option can be selected at a time-->
+                    <label for="social">Social</label>
+                    
+                    <!--Select creates a drop down menu. Option controls the possible options-->
+                    <br>
+                    <label for="liked">What did you like on this site?</label>
+                    <br>
+                    <select id="liked">
+                        <optgroup label="What did you like on this site?">
+                        <option value="photos">Photos</option>
+                        <option value="videos">Videos</option>
+                        <option value="bio">Biography</option>
+                    </optgroup>
+                    </select>
+
+                    <br>
+                    <label for="improvement">Select a page you'd like to see improved.</label>
+                    <br>
+                    <datalist id="improvements">
+                        <!--optgroup label="Which would you like improved?"-->
+                        <option value="Welcome">The Welcome Page</option>
+                        <option value="Bio">The Bio Page</option>
+                        <option value="Portfolio">The Portfolio Page</option>
+                    <!--/optgroup-->
+                    </datalist>
+                    <input list="improvements" id="improvement">
+
+                  
+                    
+
+                </fieldset>
+            </form>
+
+            <br>
+            <details>
+                <summary>Why do you ask these questions?</summary>
+                <p>This is main <em>first</em> foray into the world of web development. By answering these questions I can continue learning and improving.
+                Any and all honest feedback is <strong>very</strong> much appreciated</p>
+            </details>
+       
+
+        </main>
+
+        <footer>
+            <hr>
+            I appreciate you stopping by! 
+        </footer>
+    </body>
+
+</html>

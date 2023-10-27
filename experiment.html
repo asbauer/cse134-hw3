@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Experiment Page</title>
+        <meta name="description" content="This page is just for using the extra tags needed for the assignment">
+        <meta charset="UTF-8">
+        <style> 
+            #extra-credit{
+                background-color:red;
+            }
+            </style>
+    </head>
+
+    <body>
+
+    <h1>Extra Tags Needed for HW2</h1>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Me</a>
+        <a href="./portfolio.html">Portfolio Overview</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+
+    <div>
+        <h3 id="random">Random tags needed for the HW2</h3>
+        <h4>SVG</h4>
+            <svg width="50" height="50" viewbox="0 0 100 100"> 
+                <circle cx="25" cy="50" r=50 fill="blue" /> 
+            </svg>
+            <h4>Code</h4>
+        <code>
+            for (int i = 0 ; i &lt; 0 ; i++){
+            System.out.println("Hello world") ;
+            }
+            </code> 
+
+            <h4>Canvas</h4>
+            <canvas id="my-canvas" width="100" height="100">
+
+            </canvas>
+
+            <h4>Script Draws Red Rectangle in the Canvas</h4>
+            <script>
+              const c = document.getElementById("my-canvas");
+              const ctx = c.getContext("2d");
+              
+              ctx.fillStyle = "red";
+              ctx.fillRect(50, 25, 100, 50);
+
+            </script>
+
+            <h4>Pre</h4>
+            <pre>Heres some text for pre. </pre>
+            
+
+            <h3 id="extra-credit">Einsteins Equation Extra Credit</h3>
+            <math>
+                <mi>E</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+                </msup>
+            </math>
+            <p>2. Developers maybe couldn't use it because it didn't seem to have full compability with all browsers.
+                Many browsers, including Chrome a few times, didn't seem to move forward with the idea of supporting it long term 
+                until mainly 2023. Firefox does seem to have supported it pretty consistently though. But now that its widely accessible according to
+                caniuse (aside from IE) it should allow developers more freedom to use it without worrying quite as much about browser support 
+            </p>
+        
+        </div>
+
+
+    </body>
+
+</html>

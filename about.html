@@ -6,27 +6,51 @@
         <meta name="description" content="A little bit of background about me" >
         <meta name="keywords" content="Adam,Bauer,background,about,travel,computer,engineer,engineering" >
         <meta name="author" content="Adam Bauer" >
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+
+        <style>
+            body{
+                min-height: 100vh;
+                display: flex;
+                flex-direction:column;
+                margin: auto;
+            }
+
+         
+
+
+
+           
+
+            
+
+        </style>
     </head>
     <body>
-    <header>
-        <h1>Hi there, I'm Adam</h1>
+    <header class="slide-in-left">
+        <h1 class="slide-in-left">About Me</h1>
         <nav>
             <a href="./index.html">Home</a>
             <a href="./portfolio.html">Portfolio Overview</a>
             <a href="./contact.html">Contact</a>
-            <a href="./experiment.html">Experiment page (uses extra tags for assignment)</a>
+            <a href="./experiment.html">Experiment</a>
         </nav>
-        <picture >
-            <source srcset="./images/rome.png 500w" sizes="(max-width: 600px) 100vw">
-
-           
-            <img src="./images/yogi.png" alt="My dog, Yogi" width="360" height="360">
-            
-        </picture>
+     
     </header>
-<main>
+<main class="slide-in-left">
+
     <section>
-        <h2 id="about">About me</h2>
+       
+        <h2>Hi, I'm Adam!</h2>
+        <picture id="rome">
+            <source srcset="./images/rome.jpg">
+            <img src="./images/yogi.png">
+        </picture>
+      
+   
         <p>Originally born in the Bay Area, I've been fortunate to move around to numerous 
             different areas within the United States. I've lived in colder climates such as Nebraska and North Dakota and more tropical areas such as
             Santa Barbara and now currently San Diego. During my time of getting living in such amazing areas I've become acustomed to 
@@ -38,26 +62,81 @@
             who have taught me various methods such as communication and teamwork when applicable. I am passionate about learning, and fully believe that learning is a <i>life long</i> process that never should end. 
         </p>
 
-        <h3 id="qualifications">Proficiences & Courses</h3>
+        <h3 id="proficiences">Proficiences</h3>
         <ul>
-            <li>Java</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>Python</li>
-            <li>Arduino</li>
+            <li>
+            <details><summary>Java</summary>
+                <p>
+                Currently implementing an OS using Java and Nachos. Previous coursework includes Object Oriented Programming and Data Structures.
+       </p>
+            </details></li>
+        <li>
+            <details><summary>C++</summary>
+                <p>
+                Proficient in C++ via coursework including Advanced Data Structures, OOP, and usage for Rocket Propulsion Laboratories for various tasks.
+       </p>
+            </details></li>
+       <li>
+            <details><summary>C</summary>
+            <p>
+            Proficient in C via coursework covering the fundamentals of C programming and some usage with Arduino IDE for some side projects.
+    </p>
+        </details></li>
+            
+        <li>
+    <details>
+        <summary>Python</summary>
+        <p>
+             Currently using Python to implement Recommender Systems, such as movie and product recommendations. Previous coursework includes Python fundamentals and OOP.
+            </p> 
+        </details>
+    </li>
+    <li>
+    <details><summary>Arduino</summary>
+       <p>Both as part of my free time and for RPL I enjoy tinkering with Arduino and building some fun little side projects.
+    </p>
+    </details></li>
             </ul>
         
-            <h4>Courses</h4>
+            <h3>Courses</h3>
             <ul id="courses">
-                <li>Advanced Data Structures</li>
-                <li>Analog Circuits</li>
-                <li>Digital Logic & Design</li>
-                <li>Signals & Systems</li>
+                <li>
+                    <details> 
+                        <summary>Advanced Data Structures</summary>
+                        <p>C++ programming to include: Graph Traversals, Trees, Fast String Searching, Hashes, Compression. Implemented both a Huffman Encoding and a Graph project. </p>
+
+                    </details>
+                </li>
+                <li>
+                    <details> 
+                        <summary>Analog Circuits</summary>
+                        <p>Circuit analysis including using techniques such as Kirchoff's Laws, Thevenin and Norton theorems, Nodal analysis and more.</p>
+
+                    </details>
+
+
+                </li>
+                <li>
+                    <details>
+                        <summary>Analog Circuits Design</summary>
+                        <p>Basic proficiency in designing circuits to fulfill requirements using LTSpice. Analysis techniques of BJTs, MOSFETs, and OP Amps</p>
+                    </details>
+                </li>
+                <li>
+                    
+                    <details> 
+                        <summary>Signals & Systems</summary>
+                        <p>Observation and focus on Fourier Series and Transforms, Laplace, filtering, discretization and recovery of signals. </p>
+
+                    </details>
+
+                    
+                </li>
             </ul>
 
 
         
-        <h3 id="Activites">Activities</h3>
+        <h3 id="activities">Activities</h3>
         <p>In my spare time I'm a member of an on campus organization called Rocket Propulsion Laboratory, or RPL for short, 
             which is an on campus collective of students from various backgrounds with the common goal of creating and launching rocketry. I'm a member of the software team on our flagship rocket, Phoenix, which is slated to launch this year.
             Through my time at RPL I've gotten to work on various tasks such as interacting with Arduino's, software related problems such as implementing a scheduling order of tasks for the on flight computer in which a graph was created using only a linked list but also softer skill items
@@ -121,28 +200,14 @@
     </section>
 </main>
 
-<section>
-    <h3 id="random">Video and Audio for your viewing pleasure!</h3>
 
-        <iframe src="https://www.youtube.com/embed/CqwrwwOzVcQ?si=WaFwtdbfCBgiTN_b" title="Siberian Russian music" width="560" height="315"></iframe>
-            
-            <video title="On a boat in Greece towards Athens" controls>
-                <source src="./video/greece.mp4" type="video/mp4">
-
-            </video>
-            <audio title="A beat I made in Ableton" controls>
-                <source src="../audio/Trap3.wav" type="audio/mp3">
-                </audio>
-
-        
-
-</section>
 
 
 
 <section>
+    <a href="contact.html">
     <h2 id="contact">Contact Me!</h2>
-    <p>Now that you've learned a little bit about me, why not go ahead and <a href="contact.html">contact me!</a></p>
+</a>
 </section>
 
 
@@ -150,7 +215,8 @@
 
 <footer>
     <hr>
-   <p>Thanks for reading this far!</p>
+    <p>&copy;2023 Adam Bauer.</span> All Rights Reserved. </p>
+
 </footer>
     </body>
 </html>

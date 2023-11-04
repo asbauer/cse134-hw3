@@ -6,42 +6,115 @@
         <meta name="description" content="This is my entry into webdev, this is a portfolio page about me that would hopefully be viewed by a recruiter or a professional within industry.">
         <meta name="keywords" content = "Adam,Bauer, portfolio">
         <meta name="author" content = "Adam Bauer" >
+        <meta name="viewport" content="width=device-width">
         <link rel="icon"  href="/images/favicon.ico">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        
 
-        <style> 
-        #random{
-            background-color: blueviolet;
-        }
+
+        <style>
+            @keyframes slideUp{
+                from{
+                    transform:translateY(400px)
+                }
+
+                to{
+                    transform:translateY(0px) ;
+                   
+                }
+                
+            }
+
+            @keyframes slideDown {
+                from{
+                    transform: translateY(-200px);
+                }
+
+                to{
+                    transform: translateY(0px);
+                }
+                
+            }
+
+            @keyframes slideInRight {
+    from{
+        transform: translateX(700px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+
+
+
+            main, footer{
+               
+                animation: slideUp 1s ease-in 1 0s normal forwards;
+
+            }
+
+            footer{
+                
+                text-align: center;
+               margin-top: auto;
+
+                
+            }
+
+            body{
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+
+            }
+
+            
+
+            h1{
+                animation: slideDown 1s ease-in 1 0s normal forwards;
+
+            }
+
+            nav{
+                animation: slideInRight 1s ease-in 1 0s normal forwards;
+
+            }
+
+
         </style>
-
-
     </head>
 
     <body>
         <header>
-        <h1 id="welcome"> Welcome to my page!</h1>
+        <h1> Welcome to my page!</h1>
 
         <nav>
-            <h2>Navigate the Site</h2>
             <a href="/about.html">About Me</a>
             <a href="./portfolio.html">Portfolio Overview</a>
             <a href="./contact.html">Contact</a>
-            <a href="./experiment.html">Experiment page (uses extra tags for assignment)</a>
+            <a href="./experiment.html">Experiment page</a>
             
         </nav>
         </header>
 
         <main>
+           
             <section>
+        
                 <h2>The purpose of this site</h2>
         <p>Welcome! This site exists to provide a little bit of background about myself and some of the activities. I'm fortunate to participate in. Please look around and lets get in contact with each other. </p>
-        </section>
+    </section>
 </main>
 
 
 
+
+
         <footer>
-            <p>&copy; <span style="color: brown;">2023 Adam Bauer.</span> All Rights Reserved. </p>
+            <p>&copy;2023 Adam Bauer.</span> All Rights Reserved. </p>
 
 
 

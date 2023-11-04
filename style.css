@@ -1,0 +1,230 @@
+@import url(variables.css);
+
+
+
+html{
+font-family: var(--custom-font),Arial, Helvetica, sans-serif;
+font-weight:900;
+background-color: var(--main-color,teal);
+
+}
+
+body{
+    margin: 0;
+}
+
+@media only screen and (max-width: 480px ) {
+
+   *{
+    font-size: 1rem;
+   }
+    
+    }
+
+
+    
+
+
+
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-500px);
+        
+    } 
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from{
+        transform: translateY(500px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+
+@keyframes detailsOpen{
+    from{
+        transform: none;
+    }
+
+    to {
+        transform:scaleY(2px) ;
+    }
+}
+
+img{
+    animation: slideInRight 2s ease-in 1 0s normal forwards;
+}
+
+
+
+
+h1{
+    text-align: center;
+    display: block;
+    
+    background-color: brown;
+
+}
+
+.slide-in-left{
+    animation: slideInLeft 2s ease-in 1 0s normal forwards;
+   
+}
+
+
+
+
+
+
+
+a{
+color: rgb(2, 2, 247);
+display: inline-block;
+transition: transform 0.5s ease-in-out;
+}
+
+a:visited {
+color: rgb(2, 16, 1);
+text-decoration:underline ;
+}
+
+
+a:hover{
+color: rgb(97, 5, 147);
+transform:scale(1.1);
+
+}
+
+
+h1{
+    font-family: var(--custom-font);
+    font-weight: 800;
+    text-align: center;
+    color: var(--header-color, white) ;
+    margin: 0 ;
+   
+    background-color: var(--welcome-border);
+
+
+}
+h2{
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid black;
+    text-align: center;
+    width: 23%;
+    position: relative;
+    right: -15%;
+    bottom: -10px;
+}
+
+
+h3{
+    text-decoration: underline;
+    font-weight: bold ;
+    margin: 2px;
+    padding: 2px;
+    
+    text-align: center;
+    width: 23%;
+    position: relative;
+    right: -15%;
+    bottom: -10px;
+
+}
+
+main + section{
+    text-align: center;
+}
+
+a > h2{
+    border: 2px black solid;
+    width: 60%;
+
+}
+
+
+
+
+
+
+
+
+ul{
+    list-style: none;
+    position: relative;
+   
+}
+
+
+#rome>img{
+    border: 0px tan solid;
+    filter: contrast(1);
+    width: 30vw;
+    object-fit: contain;
+    object-position: bottom;
+    float: inline-end;
+    margin: 3%;
+    position: relative;
+    top: -2vw;
+}
+
+
+
+header{
+    max-width: 100dvw;
+    padding: 0;
+    
+    margin: 0px;
+    line-height: 2;
+    
+
+}
+
+figure{
+    float: inline-end;
+}
+
+details p{
+    border: 2px black solid;
+    margin: 0 1% 1% 1%;
+    width: 60%;
+    
+    
+}
+
+
+summary:hover{
+    color: rgb(199, 177, 148) ;
+    cursor:pointer;
+    
+   
+   
+}
+
+
+
+nav{
+    text-align: center;
+    padding: 1em ;
+    background-color: tan;
+    
+}
+
+
+
+
+
+footer{
+    text-align: center;
+    color: rgb(92, 2, 2);
+
+}
+

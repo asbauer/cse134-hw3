@@ -20,6 +20,7 @@
             }
 
          
+   
 
 
 
@@ -46,8 +47,11 @@
        
         <h2>Hi, I'm Adam!</h2>
         <picture id="rome">
-            <source srcset="./images/rome.jpg">
-            <img src="./images/yogi.png">
+            <source  media="(max-width: 480px)" srcset="./images/romephone.jpg">
+            <source  media="(max-width: 1280px)" srcset="./images/romeipad.jpg">
+            <source  media="(min-width: 1281px)" srcset="./images/romefull.jpg">
+            <img src="./images/romefull.jpg" width="50%dvw" height="50%dvh">
+
         </picture>
       
    

@@ -45,6 +45,59 @@ img{
    
 }
 
+@keyframes slideUp{
+                from{
+                    transform:translateY(400px)
+                }
+
+                to{
+                    transform:translateY(0px) ;
+                   
+                }
+                
+            }
+
+            @keyframes slideDown {
+                from{
+                    transform: translateY(-200px);
+                }
+
+                to{
+                    transform: translateY(0px);
+                }
+                
+            }
+
+            @keyframes slideInRight {
+    from{
+        transform: translateX(700px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+
+
+
+            .slideUp{
+               
+                animation: slideUp 1s ease-in 1 0s normal forwards;
+
+            }
+
+            .slideDown{
+                animation: slideDown 1s ease-in 1 0s normal forwards;
+
+            }
+
+            .slideInRight{
+                animation: slideInRight 1s ease-in 1 0s normal forwards;
+
+            }
+            
+
 
 html{
 font-family: var(--custom-font),Arial, Helvetica, sans-serif;
@@ -540,6 +593,8 @@ li{
 footer{
     text-align: center;
     color: rgb(92, 2, 2);
+    text-align: center;
+    margin-top: auto;
 
 }
 

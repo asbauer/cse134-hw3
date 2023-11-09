@@ -13,6 +13,7 @@
 
 
         <style>
+            /*
 
             @keyframes slideUp{
                 from{
@@ -50,20 +51,16 @@
 
 
 
-            main, footer{
+            .slideUp{
                
                 animation: slideUp 1s ease-in 1 0s normal forwards;
 
             }
 
-            footer{
-                
-                text-align: center;
-               margin-top: auto;
-
-                
-            }
-
+            
+            
+            
+/*
             body{
                 min-height: 100vh;
                 display: flex;
@@ -73,26 +70,27 @@
             }
 
             
+            
 
-            h1{
+            .slideDown{
                 animation: slideDown 1s ease-in 1 0s normal forwards;
 
             }
 
-            nav{
+            .slideInRight{
                 animation: slideInRight 1s ease-in 1 0s normal forwards;
 
             }
-
+*/
 
         </style>
     </head>
 
     <body>
         <header>
-        <h1> Welcome to my page!</h1>
+        <h1 class="slideDown"> Welcome to my page!</h1>
 
-        <nav>
+        <nav class="slideInRight">
             <a href="/about.html">About Me</a>
             <a href="./portfolio.html">Portfolio</a>
             <a href="./contact.html">Contact</a>
@@ -101,7 +99,7 @@
         </nav>
         </header>
 
-        <main>
+        <main class="slideUp">
            
             <section>
         
@@ -114,7 +112,7 @@
 
 
 
-        <footer>
+        <footer class="slideUp">
             <p>&copy;2023 Adam Bauer.</span> All Rights Reserved. </p>
 
 

@@ -44,7 +44,7 @@
     animation: slideInLeft 2s ease-in 1 0s normal forwards;
    
 }
-/*
+
 @keyframes slideUp{
                 from{
                     transform:translateY(400px)
@@ -96,7 +96,7 @@
                 animation: slideInRight 1s ease-in 1 0s normal forwards;
 
             }
-        */
+        
 
 
 html{

@@ -1,125 +1,5 @@
 @import url(variables.css);
 
-
-
-html{
-font-family: var(--custom-font),Arial, Helvetica, sans-serif;
-font-weight:900;
-background-color: var(--main-color,teal);
-
-}
-
-body{
-    margin: 0;
-}
-
-@media only screen and (max-width: 480px ) {
-
-    @keyframes slideInLeft{
-        from {
-            transform: translateX(-500px);
-            
-        } 
-    
-        to{
-            transform: translateX(0);
-        }
-    }
-    
-    @keyframes slideInRight {
-        from{
-            transform: translateY(500px);
-        }
-    
-        to{
-            transform: translateX(0px);
-        }
-        
-    }
-    
-    @keyframes detailsOpen{
-        from{
-            transform: none;
-        }
-    
-        to {
-            transform:scaleY(2px) ;
-        }
-    }
-    
-    img{
-        animation: slideInRight 1.3s ease-in 1 0s normal forwards;
-    }
-
-   *{
-    font-size: 1rem;
-   }
-  p{
-    margin-right: 2%;
-    margin-left: 2%;
-  }
-
-  section h3{
-    position: relative;
-    right: -32%;
-   
-    }
-
-    h2{
-            margin: 2px;
-            padding: 2px;
-            border: 2px solid black;
-            text-align: center;
-            width: 23%;
-            position: relative ;
-            left: 32%;
-            bottom: -10px;
-        }
-    }
-
-    figure{
-        width: 50vw;
-        margin-left: 25vw ;
-        text-align: center;
-        text-align: right;
-        float: right;
-        margin: 0;
-        border: 0;
-    }
-
-    figure>picture>img{
-        max-width: 95% ;
-        border: 2px rgb(125, 9, 9) solid;
-        border-top-color:rgb(125, 9, 9) ;
-        border-bottom-color: rgb(125, 9, 9);
-        
-        border-left-color: green;
-        border-right-color:green;  
-    }
-
-    /*
-                <img src="./images/romefull.jpg" width="50%dvw" height="50%dvh" alt="Photo of me at Vatican,Rome." title="Vatican,Rome.">
-*/
-    #rome img{
-        width: 60%;
-        text-align: right;
-        
-
-
-    }
-
-    figcaption{
-        text-align: center;
-        font-size: 0.8rem;
-    }
-
-@media screen and (orientation:landscape) {
-    p{
-        font-size: 0.8rem ;
-    }
-}
-
-
 @keyframes slideInLeft{
     from {
         transform: translateX(-500px);
@@ -152,26 +32,13 @@ body{
     }
 }
 
+
+
+
 img{
     animation: slideInRight 2s ease-in 1 0s normal forwards;
 }
 
-
-
-    
-
-
-
-
-
-
-h1{
-    text-align: center;
-    display: block;
-    
-    background-color: brown;
-
-}
 
 .slide-in-left{
     animation: slideInLeft 2s ease-in 1 0s normal forwards;
@@ -179,13 +46,135 @@ h1{
 }
 
 
+html{
+font-family: var(--custom-font),Arial, Helvetica, sans-serif;
+font-weight:900;
+font-size:1.2rem;
+background-color: var(--main-color,teal);
 
+}
+
+
+
+body{
+    margin: 1px;
+}
+
+p{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+
+
+@media only screen and (max-width: 480px ) {
+
+   *{
+    font-size: 1.1rem;
+   }
+ 
+
+  section h3{
+    position: relative;
+    right: -32%;
+   
+    }
+
+    h2{
+            margin: 2px;
+            padding: 2px;
+            border: 2px solid black;
+            text-align: center;
+            width: 23%;
+            position: relative ;
+            left: 32%;
+            bottom: -10px;
+        }
+
+    
+    
+
+    figure{
+        width: 50vw;
+        margin-left: 25vw ;
+        text-align: center;
+        text-align: right;
+        float: right;
+        margin: 0;
+        border: 0;
+    }
+
+    figure>picture>img{
+        max-width: 95% ;
+        border: 2px rgb(125, 9, 9) solid;
+        border-top-color:rgb(125, 9, 9) ;
+        border-bottom-color: rgb(125, 9, 9);
+        border-left-color: green;
+        border-right-color:green;  
+    }
+
+    /*
+                <img src="./images/romefull.jpg" width="50%dvw" height="50%dvh" alt="Photo of me at Vatican,Rome." title="Vatican,Rome.">
+*/
+    /*
+#rome img{
+        width: 60vw;
+        max-width: 100%;
+        bottom:-5% ;
+        left: 3%;
+        float: right;
+
+        
+    }
+*/
+    #rome>img{
+        border: 0px tan solid;
+        filter: contrast(1);
+        width: 60vw;
+        object-fit: contain;
+        object-position: bottom;
+        float: inline-end;
+        margin: 3%;
+        position: relative;
+       
+    }
+
+    
+
+    #fun-facts{
+        width: 25%;
+    }
+
+    figcaption{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    #portfolio h2{
+        position:static ;
+        box-sizing: border-box;
+        border: none;
+        width: 98%;
+        text-decoration: underline;
+        font-weight: 900;
+
+    }
+
+   
+
+    
+}
+
+@media screen and (orientation:landscape) {
+    *{
+        font-size: 1.1rem ;
+    }
+}
 
 
 
 
 a{
-color: rgb(2, 2, 247);
 display: inline-block;
 transition: transform 0.5s ease-in-out;
 }
@@ -199,11 +188,14 @@ text-decoration:underline ;
 a:hover{
 color: rgb(97, 5, 147);
 transform:scale(1.1);
-
 }
 
 
 h1{
+    text-align: center;
+    display: block;
+    
+    background-color: brown;
     font-family: var(--custom-font);
     font-weight: 800;
     text-align: center;
@@ -215,19 +207,34 @@ h1{
 
 }
 
+
+@media screen and (min-width:700px) {
+    h2{
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    text-decoration: underline;
+    width: 40%;
+    position: relative;
+    right: -18%;
+    bottom: -10px;
+}
+}
 /*
-@media screen and (min-width:1024px) {
+@media screen and (min-width:701px) {
     h2{
     margin: 2px;
     padding: 2px;
     border: 2px solid black;
     text-align: center;
-    width: 23%;
+    
+    width: 30%;
     position: relative;
-    right: -15%;
+    right: -18%;
     bottom: -10px;
 }
 }
+
 */
 
 
@@ -240,7 +247,7 @@ h3{
     text-align: center;
     width: 23%;
     position: relative;
-    right: -15%;
+    right: -18%;
     bottom: -10px;
 
 }
@@ -249,16 +256,15 @@ main + section{
     text-align: center;
 }
 
+
 a > h2{
     border: 2px black solid;
-    width: 60%;
+    width: 100%;
+    position: relative ;
+    left: auto;
+    
 
 }
-
-
-
-
-
 
 
 
@@ -270,6 +276,8 @@ ul{
 
 
 
+
+@media screen and (min-width:700px) {
 #rome>img{
     border: 0px tan solid;
     filter: contrast(1);
@@ -281,6 +289,7 @@ ul{
     position: relative;
     top: -2vw;
 }
+}
 
 
 
@@ -288,32 +297,36 @@ ul{
 header{
     max-width: 100dvw;
     padding: 0;
-    
     margin: 0px;
-    line-height: 2;
-    
-
+    line-height: 2; 
 }
 
+/*
 figure{
     float: inline-end;
 }
+*/
+
 
 details p{
     border: 2px black solid;
     margin: 0 1% 1% 1%;
-    width: 60%;
-    
+    width: 100%;
     
 }
+
+
+/*
+details{
+    width: 60%;
+
+}
+*/
 
 
 summary:hover{
     color: rgb(199, 177, 148) ;
     cursor:pointer;
-    
-   
-   
 }
 
 
@@ -325,13 +338,122 @@ nav{
     
 }
 
+figure>picture>img{
+    max-width: 95% ;
+    border: 2px rgb(125, 9, 9) solid;
+    border-top-color:rgb(125, 9, 9) ;
+    border-bottom-color: rgb(125, 9, 9);
+    border-left-color: green;
+    border-right-color:green;  
+}
+
+
+@media screen and (min-width:1189px) {
+
+   
+    
+    #about h2{
+        margin: 2px;
+        padding: 2px;
+        border: 2px solid black;
+        text-align: center;
+        
+        width: 30%;
+        position: relative;
+        right: -16%;
+        bottom: -10px;
+    }
+
+
+    figure{
+        height: 100vh;
+        width: 50vw;
+        position: relative;
+    }
+
+    #portfolio h2{
+        width: 100%;
+        position: static;
+        text-align: center;
+       
+        
+    }
+
+   /* #portfolio h2{
+        position:static ;
+        box-sizing: border-box;
+        border: none;
+        width: 98%;
+        text-decoration: underline;
+        font-weight: 900;
+
+    }
+*/
+    
+    
+
+    figure>picture>img{
+        max-height: 80%;
+        max-width: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 75%;
+        border: 2px rgb(125, 9, 9) solid;
+        border-top-color:rgb(125, 9, 9) ;
+        border-bottom-color: rgb(125, 9, 9);
+        border-left-color: green;
+        border-right-color:green;  
+        position: relative;
+        left: -5%;
+    }
+    figcaption{
+        text-align: center;
+        position: relative;
+        right: -10%;
+    }
+
+    #fun-facts{
+        margin: 1%;
+        position: relative;
+       text-align: right;
+       right: -1px;
+       
+    }
+
+    #courses-header,#activities {
+        position: relative;
+        right: -33%;
+    }
+    
+
+}
+
+caption{
+    margin: 2%;
+    text-decoration: underline;
+}
 
 
 
+ol,table,summary{
+    margin: 1%;
+}
+
+li{
+    
+    margin: 2%;
+}
 
 footer{
     text-align: center;
     color: rgb(92, 2, 2);
 
 }
+
+fieldset{
+    width: 90dvw;
+    text-align: center;
+}
+
+
 

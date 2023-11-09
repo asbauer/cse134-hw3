@@ -8,6 +8,60 @@
         <link rel="stylesheet" href="style.css" media="screen" type="text/css">
         <meta name="viewport" content="width=device-width">
 
+        <style>
+
+            button{
+                transition: transform 0.5s ease-in-out;
+
+            }
+
+            button:hover{
+                transform:scale(1.1);
+            }
+
+            fieldset{
+                width: 50vw;
+                border: 2px  solid black;
+                text-align: center;
+            }
+            legend{
+                text-align: center;
+            }
+
+            input:focus, select:focus, input:hover, textarea:hover,select:hover{
+                background-color: rgb(99, 123, 168);
+                color: rgb(237, 233, 233);
+                border: 2px black solid;
+                transform:scale(1.1);
+
+               
+            }
+
+            input,select{
+            border: 2px black solid;
+            transition: transform 0.5s ease-in-out;
+
+            }
+
+
+            textarea{
+                border: 2px black solid;
+                transition: background-color 0.5s ;
+                transition: transform 0.5s ease-in-out;
+
+            }
+
+            textarea:hover::placeholder, input:hover::placeholder, textarea:focus, textarea:focus::placeholder{
+                background-color: rgb(99, 123, 168);
+                 color: rgb(237, 233, 233);
+                 
+               
+            }
+
+            
+           
+        </style>
+
     </head>
     <body>
         <header>
@@ -15,8 +69,7 @@
             <nav>
                 <a href="./index.html">Home</a>
                 <a href="./about.html">About Me</a>
-                <a href="./portfolio.html">Portfolio Overview</a>
-                <a href="./experiment.html">Experiment page</a>
+                <a href="./portfolio.html">Portfolio</a>
             </nav>
         </header>
         <p>Thanks for looking around!</p>
@@ -24,12 +77,13 @@
         
         <main>
             
-            <form id="my-info">
+            <form id="my-info" method="get">
                 <fieldset>
                     <legend>Please contact me via one of the methods below</legend>
                     <a href="mailto:asbauer@ucsd.edu">Email me</a>
                     <br>
-                    <textarea id="their-info">Leave your info, and I'll contact you.</textarea>
+                    <label for="visitor-email"></label>
+                    <input type="email" id="visitor-email" name="visitor-email" placeholder="Please enter your email">
                     <br>
                     <button type="reset">Reset</button>
                     <button type="submit">Submit</button>
@@ -40,7 +94,7 @@
             <form>
                 <fieldset>
                     <legend>Please fill answer these questions for future site improvements.</legend>
-                    <textarea id="suggestions-box">Please write your suggestions here. </textarea>
+                    <textarea id="suggestions-box" placeholder="Please write your suggestions here."></textarea>
                     <br>
                     <button type="reset">Clear</button>
                     <button type="submit">Submit</button>
@@ -68,14 +122,14 @@
                     <br>
                     <label for="improvement">Select a page you'd like to see improved.</label>
                     <br>
-                    <datalist id="improvements">
+                    <select id="improvements">
                         <!--optgroup label="Which would you like improved?"-->
                         <option value="Welcome">The Welcome Page</option>
                         <option value="Bio">The Bio Page</option>
                         <option value="Portfolio">The Portfolio Page</option>
                     <!--/optgroup-->
                     </datalist>
-                    <input list="improvements" id="improvement">
+                
 
                   
                     
@@ -86,7 +140,7 @@
             <br>
             <details>
                 <summary>Why do you ask these questions?</summary>
-                <p>This is main <em>first</em> foray into the world of web development. By answering these questions I can continue learning and improving.
+                <p>This is my main <em>first</em> foray into the world of web development. By answering these questions I can continue learning and improving.
                 Any and all honest feedback is <strong>very</strong> much appreciated</p>
             </details>
        

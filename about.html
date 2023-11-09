@@ -12,13 +12,14 @@
 
 
         <style>
+            /*
             body{
                 min-height: 100vh;
                 display: flex;
                 flex-direction:column;
                 margin: auto;
             }
-
+*/
 
         </style>
     </head>
@@ -32,7 +33,7 @@
         </nav>
      
     </header>
-<main class="slide-in-left">
+<main class="slide-in-left" id="about">
 
     <section>
        
@@ -92,7 +93,7 @@
     </details></li>
             </ul>
         
-            <h3>Courses</h3>
+            <h3 id="courses-header">Courses</h3>
             <ul id="courses">
                 <li>
                     <details> 
@@ -140,17 +141,23 @@
 
             <figure>
             <picture>
-                <source srcset="./images/portophone.jpg" media="max-width:480px">
-                <source srcset="./images/portoipad.jpg" media="max-width:120px">
+                <source  media="(max-width: 480px)" srcset="./images/portophone2.jpg">
+                <source  media="(max-width: 1200px)" srcset="./images/portoipad.jpg">
+                <source  media="(min-width: 1201px)" srcset="./images/portofull.jpg">
+
             <img src="./images/portofull.jpg" alt="I got to visit Porto!" title="Taken in Porto, Portugal">
         </picture>
             <figcaption>Porto, Portugal.</figcaption>
         </figure>
-            <br>I've recently began to enjoy being able to travel as well. I was fortunate to take part in an amazing journey this summer, which included some time in Porto, Portugal as seen above. 
-            Additionally, I'm a big foodie who loves both cooking and exploring the culinary world.
+            <br>
             <aside>
-                On that note, if you'd like any restaurant recommendations please don't hesitate to ask! During my travel period I saved numerous folders of amazing restaurants wherever I went!
-            </aside>
+                <p>I've recently began to enjoy being able to travel as well. I was fortunate to take part in an amazing journey this summer, which included some time in Porto, Portugal as seen above. </p>
+
+                <p>
+            Additionally, I'm a big foodie who loves both cooking and exploring the culinary world.
+            On that note, if you'd like any restaurant recommendations please don't hesitate to ask! During my travel period I saved numerous folders of amazing restaurants wherever I went!
+        </p>
+        </aside>
 
 
        

@@ -22,17 +22,6 @@
     
 }
 
-@keyframes detailsOpen{
-    from{
-        transform: none;
-    }
-
-    to {
-        transform:scaleY(2px) ;
-    }
-}
-
-
 
 
 .slide-up-about{

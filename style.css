@@ -1,5 +1,7 @@
 @import url(variables.css);
 
+
+
 @keyframes slideInLeft{
     from {
         transform: translateX(-500px);
@@ -30,11 +32,12 @@
 
 
 .slide-in-left{
+    position: static;
     animation: slideInLeft 2s ease-in 1 0s normal forwards;
    
 }
 
-
+/*
 
 @keyframes slideUp{
                 from{
@@ -88,7 +91,11 @@
 
             }
         
-            
+       */  
+       .slideDown{
+        width: auto;
+       }   
+
 
 
 html{
@@ -96,6 +103,7 @@ font-family: var(--custom-font),Arial, Helvetica, sans-serif;
 font-weight:900;
 font-size:1.2rem;
 background-color: var(--main-color,teal);
+width: 100vw;
 
 }
 
@@ -103,6 +111,8 @@ background-color: var(--main-color,teal);
 
 body{
     margin: 1px;
+   min-width:fit-content ;
+    
 }
 
 p{
@@ -114,46 +124,8 @@ p{
 
 @media only screen and (max-width: 480px ) {
 
-    @keyframes slideInLeft{
-        from {
-            transform: translateX(-500px);
-            
-        } 
-    
-        to{
-            transform: translateX(0);
-        }
-    }
-    
-    @keyframes slideInRight {
-        from{
-            transform: translateY(500px);
-        }
-    
-        to{
-            transform: translateX(0px);
-        }
-        
-    }
-    
-    
-    
-    .slide-up-about{
-        animation: slideInRight 2s ease-in 1 0s normal forwards;
-    }
-    
-    
-    .slide-in-left{
-        animation: slideInLeft 2s ease-in 1 0s normal forwards;
-       
-    }
-
-
-
-
    *{
     font-size: 1.1rem;
-    width: 100vw;
    }
  
 
@@ -169,14 +141,12 @@ p{
             text-align: center;
             position: static ;
             border-bottom: 2px solid black;
-            /*
+            
             left: 32%;
             bottom: -10px;
-            */
+            
         }
 
-    
-    
 
     figure{
         width: 50vw;
@@ -256,7 +226,7 @@ p{
 
     
 }
-/*
+
 @media screen and (orientation:landscape) {
     *{
         font-size: 1.1rem ;
@@ -268,7 +238,7 @@ p{
 
     }
 }
-*/
+
 
 
 
@@ -292,7 +262,7 @@ transform:scale(2.0);
 h1{
     text-align: center;
     display: block;
-    
+    width: 100%;
     background-color: brown;
     font-family: var(--custom-font);
     font-weight: 800;
@@ -304,6 +274,8 @@ h1{
 
 
 }
+
+
 
 
 @media screen and (min-width:700px) {
@@ -318,7 +290,7 @@ h1{
     bottom: -10px;
 }
 }
-/*
+
 @media screen and (min-width:701px) {
     h2{
     margin: 2px;
@@ -333,9 +305,11 @@ h1{
 }
 }
 
-*/
 
-/*
+
+
+
+
 h3{
     text-decoration: underline;
     font-weight: bold ;
@@ -349,22 +323,25 @@ h3{
     bottom: -10px;
 
 }
-*/
+
 
 main + section{
     text-align: center;
 }
 
 
+/*
 a > h2{
     border: 2px black solid;
     width: 100%;
     position: relative ;
     left: auto;
+    text-align: center;
+    margin: 1%;
     
 
 }
-
+*/
 
 
 ul{
@@ -372,6 +349,7 @@ ul{
     position: relative;
    
 }
+
 
 
 
@@ -413,9 +391,9 @@ figure{
 
 figure>picture>img{
     max-height: 80%;
-    /*
+    
     max-width: auto;
-    */
+    
     margin-left: auto;
     height: 100%;
     width:100%;
@@ -425,10 +403,10 @@ figure>picture>img{
     border-left-color: green;
     border-right-color:green; 
  
-   /*
+   
     position: relative;
     left: -5%;float: right;
-    */
+    
     position:static;
     right: -5%;
     
@@ -457,7 +435,7 @@ h2,h3,caption{
 
 
 header{
-    max-width: 100vw;
+    width: 100dvw;
     padding: 0;
     margin: 0px;
     line-height: 2; 
@@ -516,6 +494,14 @@ figure>picture>img{
 */
 @media screen and (min-width:1189px) {
 
+    nav{
+        width: 100%;
+        text-align: center;
+        padding: 1em ;
+        background-color: tan;
+        
+    }
+
     a{ display: inline-block;
         transition: transform 0.5s ease-in-out;
         }
@@ -529,6 +515,17 @@ figure>picture>img{
         a:hover{
         color: rgb(97, 5, 147);
         transform:scale(1.1);
+        }
+
+        a > h2{
+            border: 2px black solid;
+            width: 100%;
+            position: relative ;
+            left: auto;
+            text-align: center;
+            margin: 1%;
+            
+        
         }
    
     

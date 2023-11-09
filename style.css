@@ -11,7 +11,7 @@
     }
 }
 
-@keyframes slideInRight {
+@keyframes slideUpAbout {
     from{
         transform: translateY(500px);
     }
@@ -25,7 +25,7 @@
 
 
 .slide-up-about{
-    animation: slideInRight 2s ease-in 1 0s normal forwards;
+    animation: slideUpAbout 2s ease-in 1 0s normal forwards;
 }
 
 
@@ -59,7 +59,7 @@
                 
             }
 
-            @keyframes slideInRight {
+            @keyframes slideInRightHome {
     from{
         transform: translateX(700px);
     }
@@ -83,8 +83,8 @@
 
             }
 
-            .slideInRight{
-                animation: slideInRight 1s ease-in 1 0s normal forwards;
+            .slideInRightHome{
+                animation: slideInRightHome 1s ease-in 1 0s normal forwards;
 
             }
         

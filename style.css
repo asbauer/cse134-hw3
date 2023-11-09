@@ -80,15 +80,16 @@ p{
    
     }
 
-    h2{
-            margin: 2px;
-            padding: 2px;
-            border: 2px solid black;
+    #about>section>h2 , h2{
+            width: 100%;
+          
             text-align: center;
-            width: 23%;
-            position: relative ;
+            position: static ;
+            border-bottom: 2px solid black;
+            /*
             left: 32%;
             bottom: -10px;
+            */
         }
 
     
@@ -112,21 +113,25 @@ p{
         border-left-color: green;
         border-right-color:green;  
     }
+    
 
     /*
                 <img src="./images/romefull.jpg" width="50%dvw" height="50%dvh" alt="Photo of me at Vatican,Rome." title="Vatican,Rome.">
 */
-    /*
+ 
+/*
 #rome img{
         width: 60vw;
         max-width: 100%;
         bottom:-5% ;
         left: 3%;
-        float: right;
+        float: inline-end;
+        margin: 3%;
 
         
     }
 */
+
     #rome>img{
         border: 0px tan solid;
         filter: contrast(1);
@@ -134,7 +139,7 @@ p{
         object-fit: contain;
         object-position: bottom;
         float: inline-end;
-        margin: 3%;
+        margin-top: 3%;
         position: relative;
        
     }
@@ -289,6 +294,51 @@ ul{
     position: relative;
     top: -2vw;
 }
+figure{
+    width: 50vw;
+    margin-left: 25vw ;
+    text-align: center;
+    text-align: right;
+    float: right;
+    margin: 0;
+    border: 0;
+}
+
+
+figure>picture>img{
+    max-height: 80%;
+    max-width: auto;
+    margin-left: auto;
+    height: 100%;
+    width:100%;
+    border: 2px rgb(125, 9, 9) solid;
+    border-top-color:rgb(125, 9, 9) ;
+    border-bottom-color: rgb(125, 9, 9);
+    border-left-color: green;
+    border-right-color:green; 
+ 
+   /*
+    position: relative;
+    left: -5%;float: right;
+    */
+    position:static;
+    right: -5%;
+    
+}
+
+figcaption{
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+
+h2,h3,caption{
+    position: static;
+    width: 100%;
+    text-align: center;
+}
+
+
 }
 
 
@@ -304,6 +354,7 @@ header{
 /*
 figure{
     float: inline-end;
+    float: left;
 }
 */
 
@@ -338,6 +389,9 @@ nav{
     
 }
 
+
+/*
+
 figure>picture>img{
     max-width: 95% ;
     border: 2px rgb(125, 9, 9) solid;
@@ -347,7 +401,7 @@ figure>picture>img{
     border-right-color:green;  
 }
 
-
+*/
 @media screen and (min-width:1189px) {
 
    
@@ -369,6 +423,7 @@ figure>picture>img{
         height: 100vh;
         width: 50vw;
         position: relative;
+        float: inline-end;
     }
 
     #portfolio h2{
@@ -403,14 +458,40 @@ figure>picture>img{
         border-bottom-color: rgb(125, 9, 9);
         border-left-color: green;
         border-right-color:green;  
+       /*
         position: relative;
-        left: -5%;
+        left: -5%;float: right;
+        */
+        position:relative;
+        right: -5%;
+        
+        
     }
+    
+/*
+    figure>picture>img{
+        max-width: 95% ;
+        border: 2px rgb(125, 9, 9) solid;
+        border-top-color:rgb(125, 9, 9) ;
+        border-bottom-color: rgb(125, 9, 9);
+        border-left-color: green;
+        border-right-color:green;  
+    }
+    */
+    
+    /*
     figcaption{
         text-align: center;
         position: relative;
         right: -10%;
     }
+    */
+    figcaption{
+            text-align: center;
+            font-size: 0.8rem;
+        
+    }
+
 
     #fun-facts{
         margin: 1%;
@@ -454,6 +535,7 @@ fieldset{
     width: 90dvw;
     text-align: center;
 }
+
 
 footer a, footer a:visited {
     color: blue;

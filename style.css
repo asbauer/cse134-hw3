@@ -116,6 +116,7 @@ p{
 
    *{
     font-size: 1.1rem;
+    width: 100vw;
    }
  
 
@@ -218,7 +219,7 @@ p{
 
     
 }
-
+/*
 @media screen and (orientation:landscape) {
     *{
         font-size: 1.1rem ;
@@ -230,12 +231,12 @@ p{
 
     }
 }
-
+*/
 
 
 
 a{
-display: inline-block;
+display: inline;
 transition: transform 0.5s ease-in-out;
 }
 
@@ -375,7 +376,9 @@ figure{
 
 figure>picture>img{
     max-height: 80%;
+    /*
     max-width: auto;
+    */
     margin-left: auto;
     height: 100%;
     width:100%;
@@ -411,11 +414,13 @@ h2,h3,caption{
 
 }
 
+*/
+
 
 
 
 header{
-    max-width: 100dvw;
+    max-width: 100vw;
     padding: 0;
     margin: 0px;
     line-height: 2; 
@@ -533,7 +538,9 @@ figure>picture>img{
 
     figure>picture>img{
         max-height: 80%;
+       /*
         max-width: auto;
+        */
         margin-left: auto;
         height: 100%;
         width: 75%;

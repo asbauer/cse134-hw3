@@ -34,7 +34,7 @@
    
 }
 
-/*
+
 
 @keyframes slideUp{
                 from{
@@ -88,7 +88,7 @@
 
             }
         
-            */
+            
 
 
 html{
@@ -113,6 +113,43 @@ p{
 
 
 @media only screen and (max-width: 480px ) {
+
+    @keyframes slideInLeft{
+        from {
+            transform: translateX(-500px);
+            
+        } 
+    
+        to{
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes slideInRight {
+        from{
+            transform: translateY(500px);
+        }
+    
+        to{
+            transform: translateX(0px);
+        }
+        
+    }
+    
+    
+    
+    .slide-up-about{
+        animation: slideInRight 2s ease-in 1 0s normal forwards;
+    }
+    
+    
+    .slide-in-left{
+        animation: slideInLeft 2s ease-in 1 0s normal forwards;
+       
+    }
+
+
+
 
    *{
     font-size: 1.1rem;
@@ -248,7 +285,7 @@ text-decoration:underline ;
 
 a:hover{
 color: rgb(97, 5, 147);
-transform:scale(1.1);
+transform:scale(2.0);
 }
 
 
@@ -479,6 +516,20 @@ figure>picture>img{
 */
 @media screen and (min-width:1189px) {
 
+    a{ display: inline-block;
+        transition: transform 0.5s ease-in-out;
+        }
+        
+        a:visited {
+        color: rgb(2, 16, 1);
+        text-decoration:underline ;
+        }
+        
+        
+        a:hover{
+        color: rgb(97, 5, 147);
+        transform:scale(1.1);
+        }
    
     
     #about h2{
